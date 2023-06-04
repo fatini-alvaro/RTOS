@@ -31,3 +31,23 @@ Mutexes (Mutual Exclusion): São mecanismos que fornecem exclusão mútua para r
 Esses mecanismos de sincronização, como semáforos e mutexes, ajudam a evitar problemas de concorrência, garantindo que apenas uma tarefa possa acessar um recurso compartilhado de cada vez. Eles garantem a coerência dos dados e evitam conflitos e condições de corrida.
 
 Em um ambiente de produção, onde várias tarefas estão em execução simultaneamente e compartilham recursos, é importante implementar mecanismos de sincronização adequados para garantir o comportamento correto e previsível do sistema. A escolha entre semáforos, mutexes ou outros mecanismos depende dos requisitos específicos e da natureza da aplicação.
+
+## Reações baseadas em condições de tempo real.
+No desafio adicionei duas tarefas a mais, uma que liga e desliga o led a cada meio segundo, nao tem validação para acender o mesmo, no outro adicionei uma validação que verifica o valor da variavel que guarda o valor da temperatura para acender o led.
+
+##Vantagens
+O uso de um Sistema Operacional em Tempo Real (RTOS) oferece várias vantagens no desenvolvimento de aplicações para Internet das Coisas (IoT). Aqui estão algumas das principais vantagens do uso de um RTOS em aplicações IoT:
+
+Gerenciamento eficiente de recursos: Um RTOS é projetado para lidar com restrições de recursos, como processamento limitado, memória e energia. Ele oferece um gerenciamento eficiente desses recursos, permitindo que as aplicações IoT sejam executadas de forma otimizada mesmo em dispositivos com recursos limitados.
+
+Multitarefa e responsividade em tempo real: O RTOS permite a execução de várias tarefas de forma concorrente, oferecendo um ambiente de tempo real para aplicações IoT. Isso permite que diferentes partes do sistema funcionem de forma independente, respondendo de maneira rápida e previsível a eventos em tempo real, como a chegada de dados de sensores ou comandos remotos.
+
+Sincronização e comunicação entre tarefas: O RTOS fornece mecanismos de sincronização e comunicação entre tarefas, como semáforos, mutexes e filas. Isso facilita a coordenação entre os diferentes componentes de uma aplicação IoT, permitindo que as tarefas compartilhem informações, acessem recursos compartilhados de forma segura e cooperem em tempo real.
+
+Tolerância a falhas e robustez: O RTOS oferece recursos para lidar com falhas e situações de erro. Com mecanismos como watchdog timers e tratamento de exceções, o RTOS pode detectar e recuperar automaticamente de falhas, garantindo a robustez e confiabilidade das aplicações IoT.
+
+Facilidade de desenvolvimento e portabilidade: Os RTOSs geralmente fornecem uma camada de abstração que simplifica o desenvolvimento de aplicações IoT. Eles oferecem APIs padronizadas, bibliotecas e ferramentas que facilitam o desenvolvimento, depuração e teste de software. Além disso, a portabilidade é uma vantagem, pois os RTOSs são projetados para funcionar em uma ampla variedade de plataformas e dispositivos, permitindo que as aplicações sejam facilmente migradas entre diferentes ambientes.
+
+Escalabilidade e flexibilidade: Os RTOSs são altamente escaláveis, permitindo que as aplicações IoT cresçam e se adaptem às necessidades em constante evolução. Eles suportam a adição de novas funcionalidades e a integração com novos dispositivos ou protocolos, fornecendo flexibilidade para expandir e atualizar as aplicações IoT conforme necessário.
+
+No geral, o uso de um RTOS nas aplicações IoT oferece benefícios significativos, como eficiência no uso de recursos, multitarefa em tempo real, sincronização, tolerância a falhas e facilidade de desenvolvimento. Essas vantagens contribuem para a criação de aplicações IoT robustas, responsivas e escaláveis, permitindo a construção de sistemas inteligentes e conectados com alto desempenho e confiabilidade.
